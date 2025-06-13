@@ -128,8 +128,7 @@ func listPeople() {
 	}
 }
 
-func main() {
-
+func selectMenu(){
 	for {
 		var option int
 
@@ -155,4 +154,9 @@ func main() {
 
 		}
 	}
+}
+
+func main() {
+	selectMenu()
+	
 }
