@@ -156,6 +156,10 @@ func selectMenu(){
 	}
 }
 
+func printSum(){
+	fmt.Println("Hello")
+}
+
 func main() {
 	selectMenu()
 	
