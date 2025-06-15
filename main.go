@@ -128,6 +128,12 @@ func listPeople() {
 	}
 }
 
+func exitCase(){
+	fmt.Println("Thank you for using the program.")
+	fmt.Println()
+	return
+}
+
 func selectMenu(){
 	for {
 		var option int
@@ -146,9 +152,7 @@ func selectMenu(){
 		case 4:
 			deactivatePerson()
 		case 5:
-			fmt.Println("Thank you for using the program.")
-			fmt.Println()
-			return
+			exitCase()
 		default:
 			fmt.Println("Wrong option. Please ty again.")
 
