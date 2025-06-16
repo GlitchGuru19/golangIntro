@@ -14,8 +14,12 @@ type Person struct {
 
 var people []Person // Slice to store people's records
 
+func printWelcome(){
+	fmt.Println("Welcome to the People directory created by Peter Kabwe")
+}
+
 func displayMenu() {
-	fmt.Println("\nWelcome to the People directory")
+	printWelcome()
 	fmt.Println()
 	fmt.Println("please choose an option")
 	fmt.Println("1. Add Person")
@@ -160,9 +164,6 @@ func selectMenu(){
 	}
 }
 
-func printSum(){
-	fmt.Println("Hello")
-}
 
 func main() {
 	selectMenu()
