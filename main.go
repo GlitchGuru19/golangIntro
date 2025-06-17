@@ -12,6 +12,13 @@ type Person struct {
 	IsActive bool
 }
 
+type Book struct {
+	Title string
+	Author string
+	Year int
+	isBorrowed bool
+}
+
 var people []Person // Slice to store people's records
 
 func printWelcome(){
