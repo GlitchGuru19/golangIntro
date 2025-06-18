@@ -19,6 +19,8 @@ type Book struct {
 	isBorrowed bool
 }
 
+var book []Book
+
 var people []Person // Slice to store people's records
 
 func printWelcome(){
