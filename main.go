@@ -35,7 +35,15 @@ func displayMenu() {
 	fmt.Println("2. List People")
 	fmt.Println("3. Activate Person")
 	fmt.Println("4. Deactivate Person")
-	fmt.Println("5. Exit")
+	fmt.Println("5. Search Person")
+	fmt.Println("6. Exit")
+}
+
+func searchPerson() {
+	var query string = ""
+	fmt.Println("Enter the person to search for: ")
+	fmt.Scanln(&query)
+	fmt.Printf("This is what you have chosen: %s", query)
 }
 
 // Function to add the books
@@ -141,11 +149,6 @@ func listPeople() {
 	}
 }
 
-func exitCase(){
-	fmt.Println("Thank you for using the program.")
-	fmt.Println()
-	return
-}
 
 func selectMenu(){
 	for {
@@ -165,7 +168,11 @@ func selectMenu(){
 		case 4:
 			deactivatePerson()
 		case 5:
-			exitCase()
+			searchPerson()
+		case 6:
+			fmt.Println("Thank you for using the program.")
+			fmt.Println()
+			return
 		default:
 			fmt.Println("Wrong option. Please ty again.")
 
