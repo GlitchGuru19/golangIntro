@@ -41,9 +41,10 @@ func displayMenu() {
 
 func searchPerson() {
 	var query string = ""
-	fmt.Println("Enter the person to search for: ")
+	fmt.Print("Enter the person to search for: ")
 	fmt.Scanln(&query)
 	fmt.Printf("This is what you have chosen: %s", query)
+	fmt.Println("\n")
 }
 
 // Function to add the books
@@ -138,7 +139,7 @@ func listPeople() {
 		return
 	}
 
-	fmt.Println("List of all people:")
+	fmt.Println("\nList of all people:")
 	for i, person := range people {
 		status := "Inactive"
 		if person.IsActive {
